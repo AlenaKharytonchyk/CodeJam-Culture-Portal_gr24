@@ -1,3 +1,9 @@
+import directorOne from '../../images/directors/1.jpg';
+import directorTwo from '../../images/directors/2.jpg';
+import directorThree from '../../images/directors/3.jpg';
+import directorFour from '../../images/directors/4.jpg';
+import directorFive from '../../images/directors/5.jpg';
+
 export const directorsArr = ['Александровская Лариса Помпеевна', 'Буйницкий Игнат Терентьевич', 'Дервоед Роман Алексеевич', 'Лев Михайлович Эльстон', 'Леон Гдальевич Рахленко'];
 
 export const citiesArr = ['Минск', 'Полочаны', 'Орша', 'Гомель'];
@@ -9,8 +15,10 @@ export const dirrectorsCities = {
   Гомель: ['Лев Михайлович Эльстон'],
 };
 
-export const directorsInfo = {
-  'Александровская Лариса Помпеевна': {
+export const directorsInfo = [
+  {
+    name: 'Александровская Лариса Помпеевна',
+    img: directorOne,
     info: 'Белорусская советская оперная певица (сопрано), режиссёр, публицист и общественный деятель, народная артистка СССР.',
     biography: {
       dates: ['1902', '1920', '1924-1928', '1927', '1930-1933', '1933', '1941-1945', '1951-1960', '1980'],
@@ -45,7 +53,9 @@ export const directorsInfo = {
     video: 'https://www.youtube.com/watch?v=v3LC9JtorMM',
   },
 
-  'Буйницкий Игнат Терентьевич': {
+  {
+    name: 'Буйницкий Игнат Терентьевич',
+    img: directorTwo,
     info: 'Белорусский актёр, режиссёр, театральный деятель, основатель первого профессионального национального белорусского театра. Театр Буйницкого показывал спектакли в местечках и деревнях Белоруссии, гастролировал в Вильнюсе, Минске, Полоцке, Санкт-Петербурге, Варшаве и других городах. Его деятельность заложила основы белорусского профессионального театрального искусства. Большинство спектаклей Игнат Буйницкий ставил сам. В 1917 году был одним из инициаторов создания «Первого товарищества белорусской драмы и комедии» в Минске.',
     biography: {
       dates: ['1861', '1907', '1910', '1913', '1914—1916', '1917'],
@@ -68,7 +78,9 @@ export const directorsInfo = {
     video: 'https://www.youtube.com/watch?v=FpHsAWuSoEI',
   },
 
-  'Дервоед Роман Алексеевич': {
+  {
+    name: 'Дервоед Роман Алексеевич',
+    img: directorThree,
     info: 'Театральный режиссёр, белорусский актёр.',
     biography: {
       dates: ['1985', '2006', '2007', '2008', '2013'],
@@ -101,7 +113,9 @@ export const directorsInfo = {
     video: 'https://www.youtube.com/watch?v=gc9zCCB3KhM',
   },
 
-  'Лев Михайлович Эльстон': {
+  {
+    name: 'Лев Михайлович Эльстон',
+    img: directorFour,
     info: 'Советский театральный режиссёр. Заслуженный деятель искусств Карельской АССР.',
     biography: {
       dates: ['1900', '2006', '2007', '2008', '2013'],
@@ -141,7 +155,9 @@ export const directorsInfo = {
     place: 'Гомель',
   },
 
-  'Леон Гдальевич Рахленко': {
+  {
+    name: 'Леон Гдальевич Рахленко',
+    img: directorFive,
     info: 'Cоветский актёр, режиссёр, педагог. Народный артист СССР',
     biography: {
       dates: ['1907', '1907', '1910', '1913', '1914—1916', '1917'],
@@ -173,4 +189,4 @@ export const directorsInfo = {
     place: 'Минск',
     video: 'https://www.youtube.com/watch?v=kimvRGqEe-U',
   },
-};
+];
