@@ -45,12 +45,16 @@ function DirectorCard(props) {
 
 DirectorCard.propTypes = {
   classes: PropTypes.shape({}).isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   result: PropTypes.shape({
     name: PropTypes.string.isRequired,
     info: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
   }).isRequired,
+};
+
+DirectorCard.defaultProps = {
+  onClick: () => {},
 };
 
 export default withStyles(styles)(DirectorCard);
