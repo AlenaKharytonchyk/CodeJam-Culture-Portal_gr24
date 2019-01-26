@@ -9,23 +9,23 @@ function CurrentDirector(name) {
       <img src={mainPhotoPath} alt={name} />
       <div>
         <h3>Биография</h3>
-        <div></div>
+        <div />
       </div>
       <div>
         <h3>Список произведений</h3>
-        <div></div>
+        <div />
       </div>
       <div>
         <h3>Фото</h3>
-        <div></div>
+        <div />
       </div>
       <div>
         <h3>Видео</h3>
-        <div></div>
+        <div />
       </div>
       <div>
         <h3>Место основной деятельности</h3>
-        <div></div>
+        <div id="map" />
       </div>
     </div>);
 }
