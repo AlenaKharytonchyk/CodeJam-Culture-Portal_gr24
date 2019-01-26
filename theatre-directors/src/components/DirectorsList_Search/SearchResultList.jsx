@@ -20,7 +20,13 @@ function SearchResultList(props) {
 }
 SearchResultList.propTypes = {
   classes: PropTypes.shape({}).isRequired,
-  results: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  results: PropTypes.arrayOf(PropTypes.shape(
+    {
+      name: PropTypes.string.isRequired,
+      info: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+    },
+  )).isRequired,
 };
 
 export default withStyles(styles)(SearchResultList);

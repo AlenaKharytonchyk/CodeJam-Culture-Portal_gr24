@@ -18,24 +18,24 @@ const styles = {
 };
 
 function DirectorCard(props) {
-  const { classes } = props;
+  const { classes, result } = props;
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="DirectorGeneralInfo"
+          alt={result.name}
           className={classes.media}
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="DirectorGeneralInfo"
+          image={result.img}
+          title={result.name}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Director name
+            {result.name}
           </Typography>
           <Typography component="p">
-          director general info
+            {result.info}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -45,6 +45,11 @@ function DirectorCard(props) {
 
 DirectorCard.propTypes = {
   classes: PropTypes.shape({}).isRequired,
+  result: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    info: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default withStyles(styles)(DirectorCard);

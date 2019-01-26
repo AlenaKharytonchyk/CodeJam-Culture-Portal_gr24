@@ -1,6 +1,14 @@
 import React from 'react';
 import DirectorCard from '../components/DirectorsList_Search/SearchResultCard';
+import { directorsInfo } from '../assets/textInfo/ru/directorsInfo';
 
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function getRndElement(arr) {
+  const i = getRndInteger(0, arr.length - 1);
+  return arr[i];
+}
 function Home() {
   return (
     <div className="App">
@@ -34,7 +42,7 @@ function Home() {
           теаральными режиссерами нашей страны. Вот один из них:
         </p>
       </article>
-      <DirectorCard/>
+      <DirectorCard result={getRndElement(directorsInfo)} />
     </div>);
 }
 
