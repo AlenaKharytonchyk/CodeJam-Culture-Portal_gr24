@@ -35,12 +35,14 @@ code {
 }
 
 .developer-card a{
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   color: aliceblue;
 }
 
 .developer-card svg{
-  margin: 0 5px;
+  margin: 0 5px; 
 }
 
 .developer-card a:hover{
