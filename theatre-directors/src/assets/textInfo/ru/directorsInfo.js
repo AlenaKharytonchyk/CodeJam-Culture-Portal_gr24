@@ -50,6 +50,7 @@ export const directorsInfo = [
       '1958 — «Ясный рассвет» А.Е.Туренкова',
       '1960 — «Пиковая дама» П. И. Чайковского.'],
     place: 'Минск',
+    coordinates: { lat: 53.9, lng: 27.56667 },
     video: 'https://www.youtube.com/watch?v=v3LC9JtorMM',
   },
 
@@ -75,6 +76,7 @@ export const directorsInfo = [
       '«В зимний вечер» Э.Ожешко',
       '«Модный шляхтич» К.Каганца'],
     place: 'Полочаны',
+    coordinates: { lat: 54.2256, lng: 26.7044 },
     video: 'https://www.youtube.com/watch?v=FpHsAWuSoEI',
   },
 
@@ -110,6 +112,7 @@ export const directorsInfo = [
       '2018 - «Бюджет» инсценировка по информационному материалу интернет-ресурсаTUT.BY',
     ],
     place: 'Орша',
+    coordinates: { lat: 54.5081, lng: 30.4172 },
     video: 'https://www.youtube.com/watch?v=gc9zCCB3KhM',
   },
 
@@ -153,6 +156,7 @@ export const directorsInfo = [
       '1962 — «Именем Революции» М.Шатрова',
     ],
     place: 'Гомель',
+    coordinates: { lat: 52.4345, lng: 30.9754 },
   },
 
   {
@@ -187,6 +191,7 @@ export const directorsInfo = [
       '1957 — «Грозовой год» А.Я.Каплера',
     ],
     place: 'Минск',
+    coordinates: { lat: 53.9, lng: 27.56667 },
     video: 'https://www.youtube.com/watch?v=kimvRGqEe-U',
   },
 ];
