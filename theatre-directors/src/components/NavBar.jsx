@@ -26,7 +26,7 @@ function NavBar(props) {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            Title placeholder
+            Театральные режиссеры Беларуси
           </Typography>
           <Button color="inherit">En</Button>
           <Button color="inherit">Ru</Button>
