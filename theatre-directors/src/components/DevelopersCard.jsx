@@ -22,7 +22,8 @@ function DeveloperCard(devInfo) {
           color="6600bf"
           size="lg"
         />
-        github: {devInfo.github}
+        github:
+        {devInfo.github}
       </a>
     </div>
   );
