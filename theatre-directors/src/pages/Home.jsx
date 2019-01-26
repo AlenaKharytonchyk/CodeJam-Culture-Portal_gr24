@@ -1,5 +1,5 @@
 import React from 'react';
-import directorCard from '../components/DirectorsList_Search/SearchResultCard';
+import DirectorCard from '../components/DirectorsList_Search/SearchResultCard';
 
 function Home() {
   return (
@@ -34,7 +34,7 @@ function Home() {
           теаральными режиссерами нашей страны. Вот один из них:
         </p>
       </article>
-      {directorCard()}
+      <DirectorCard/>
     </div>);
 }
 
