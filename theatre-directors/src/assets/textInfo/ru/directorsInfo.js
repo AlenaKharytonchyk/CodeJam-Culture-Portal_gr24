@@ -1,8 +1,8 @@
-import directorOne from '../../images/directors/1.jpg';
-import directorTwo from '../../images/directors/2.jpg';
-import directorThree from '../../images/directors/3.jpg';
-import directorFour from '../../images/directors/4.jpg';
-import directorFive from '../../images/directors/5.jpg';
+import directorOne from '../../images/directors/1Alexandrovskaya.jpg';
+import directorTwo from '../../images/directors/2Bujnicki.jpg';
+import directorThree from '../../images/directors/3Dervoed.jpg';
+import directorFour from '../../images/directors/4Elston.jpg';
+import directorFive from '../../images/directors/5Rahlenko.jpg';
 
 export const directorsArr = ['Александровская Лариса Помпеевна', 'Буйницкий Игнат Терентьевич', 'Дервоед Роман Алексеевич', 'Лев Михайлович Эльстон', 'Леон Гдальевич Рахленко'];
 
