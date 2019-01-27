@@ -9,7 +9,7 @@ export default function Compositions(props) {
     <div className="compositions">
       <h3>
         <FormattedMessage
-          id="DirectorDetails.compositions.Title"
+          id="DirectorDetails.Compositions.Title"
           defaultMessage="Произведения автора"
         />
       </h3>

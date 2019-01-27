@@ -22,7 +22,7 @@ export default class Map extends Component {
       <div className="map">
         <h3>
           <FormattedMessage
-            id="DirectorDetails.compositions.Title"
+            id="DirectorDetails.Place.Title"
             defaultMessage="Место основной деятельности"
           />  
         </h3>
