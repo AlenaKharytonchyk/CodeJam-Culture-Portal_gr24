@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import FormattedMessage from 'react-intl';
 
 const styles = {
   root: {
@@ -26,7 +27,10 @@ function NavBar(props) {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            Театральные режиссеры Беларуси
+            <FormattedMessage
+              id="NavBar.Title"
+              defaultMessage="Театральные режиссеры Беларуси"
+            />
           </Typography>
           <Button color="inherit">En</Button>
           <Button color="inherit">Ru</Button>
