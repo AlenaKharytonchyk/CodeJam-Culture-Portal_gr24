@@ -6,20 +6,17 @@ import SearchResultCard from './SearchResultCard';
 const styles = {
   root: {
     display: 'flex',
-    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
     flexWrap: 'wrap',
+    justifyContent: 'space-around',
   },
 };
 
 function SearchResultList(props) {
   const { results, selectResult, classes } = props;
   return (
-    <div
-      className={classes.root} 
-      style={{
-        display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'space-around',
-      }} 
-    >
+    <div className={classes.root}>
       {
        results.map(res => (
          <SearchResultCard

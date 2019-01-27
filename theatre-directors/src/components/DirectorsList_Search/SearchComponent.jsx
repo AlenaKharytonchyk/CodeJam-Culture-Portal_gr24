@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-
-const directorsArr = ['Александровская Лариса Помпеевна', 'Буйницкий Игнат Терентьевич', 'Дервоед Роман Алексеевич', 'Лев Михайлович Эльстон', 'Леон Гдальевич Рахленко'];
-
-const citiesArr = ['Минск', 'Полочаны', 'Орша', 'Гомель'];
-
+import IconButton from '@material-ui/core/IconButton';
+import PropTypes from 'prop-types';
+import Sort from '@material-ui/icons/Sort';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import { directorsArr } from '../../assets/textInfo/ru/directorsInfo';
 
 class AutocompleteInput extends Component {
   state = {
@@ -12,6 +12,8 @@ class AutocompleteInput extends Component {
   }
 
   render() {
+    const { inputVal } = this.state;
+    const { updatedata } = this.props;
     return (
       <div>
         <TextField
@@ -27,15 +29,29 @@ class AutocompleteInput extends Component {
             setTimeout(() => {
               const matches = [];
               directorsArr.forEach((name) => {
-                if (name.toLowerCase().includes(this.state.inputVal)) matches.push(name);
+                if (name.toLowerCase().includes(inputVal)) matches.push(name);
               });
-              this.props.updatedata(matches);
+              updatedata(matches);
             });
           }}
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton aria-label="Menu">
+                  <Sort />
+                </IconButton>
+              </InputAdornment>
+            ),
+          }}
+          style={{ width: 600 }}
         />
       </div>
     );
   }
 }
+
+AutocompleteInput.propTypes = {
+  updatedata: PropTypes.func.isRequired,
+};
 
 export default AutocompleteInput;

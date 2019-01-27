@@ -11,7 +11,8 @@ class Directors extends Component {
     this.state = {
       results: directorsInfo,
       selectedResult: null,
-      newData: directorsInfo.slice(0), };
+      newData: directorsInfo.slice(0),
+    };
   }
 
   updateData = (value) => {
@@ -30,14 +31,14 @@ class Directors extends Component {
   }
 
   render() {
-    const { results, selectedResult } = this.state;
+    const { selectedResult } = this.state;
     const isSelected = !!selectedResult;
     const { newData } = this.state;
     return (
       <div>
-        <SearchBar updatedata={this.updateData} />
         <Slide in={!isSelected} direction="right" mountOnEnter unmountOnExit>
-          <div id="search-section">
+          <div id="search-section" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <SearchBar updatedata={this.updateData} />
             <SearchResultList results={newData} selectResult={e => this.handleResultSelect(e)} />
           </div>
         </Slide>
