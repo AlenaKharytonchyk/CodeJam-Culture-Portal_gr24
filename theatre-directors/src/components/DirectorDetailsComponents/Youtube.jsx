@@ -1,17 +1,72 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import YouTubePlayer from 'react-player/lib/players/YouTube';
+import Button from '@material-ui/core/Button';
 
-export default function Youtube(props) {
-  const { videoUrl } = props;
-  return (
-    <div className="video">
-      <h3>Видео</h3>
-      <ReactPlayer url={videoUrl} controls={true} playing={false} />
-    </div>
-  );
+function getModalStyle() {
+  const top = 50;
+  const left = 50;
+
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+  };
+}
+
+const styles = theme => ({
+  paper: {
+    position: 'absolute',
+    padding: 0,
+    boxShadow: theme.shadows[5],
+    outline: 'none',
+  },
+});
+
+class Youtube extends React.Component {
+  state = {
+    open: false,
+  };
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+    const { classes, videoUrl } = this.props;
+
+    return (
+      <div>
+        <Button onClick={this.handleOpen}>Просмотреть видео</Button>
+        <Modal
+          aria-labelledby="simple-modal-title"
+          aria-describedby="simple-modal-description"
+          open={this.state.open}
+          onClose={this.handleClose}
+        >
+          <div style={getModalStyle()} className={classes.paper}>
+            <YouTubePlayer
+              url={videoUrl}
+              playing={true}
+              controls={true}
+            />
+          </div>
+        </Modal>
+      </div>
+    );
+  }
 }
 
 Youtube.propTypes = {
-  videoUrl: PropTypes.shape({}).isRequired,
+  classes: PropTypes.shape({}).isRequired,
+  videoUrl: PropTypes.string.isRequired,
 };
+
+
+export default withStyles(styles)(Youtube);
