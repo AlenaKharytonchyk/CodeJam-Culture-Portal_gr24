@@ -1,3 +1,14 @@
+import directorOne from '../../images/directors/1Alexandrovskaya.jpg';
+import directorTwo from '../../images/directors/2Bujnicki.jpg';
+import directorThree from '../../images/directors/3Dervoed.jpg';
+import directorFour from '../../images/directors/4Elston.jpg';
+import directorFive from '../../images/directors/5Rahlenko.jpg';
+import Alexandrovskaya from '../../images/directors/1';
+import Bujnicki from '../../images/directors/2';
+import Dervoed from '../../images/directors/3';
+import Elston from '../../images/directors/4';
+import Rahlenko from '../../images/directors/5';
+
 export const directorsArr = ['Александровская Лариса Помпеевна', 'Буйницкий Игнат Терентьевич', 'Дервоед Роман Алексеевич', 'Лев Михайлович Эльстон', 'Леон Гдальевич Рахленко'];
 
 export const citiesArr = ['Минск', 'Полочаны', 'Орша', 'Гомель'];
@@ -9,8 +20,11 @@ export const dirrectorsCities = {
   Гомель: ['Лев Михайлович Эльстон'],
 };
 
-export const directorsInfo = {
-  'Александровская Лариса Помпеевна': {
+export const directorsInfo = [
+  {
+    gallery: Alexandrovskaya,
+    name: 'Александровская Лариса Помпеевна',
+    img: directorOne,
     info: 'Белорусская советская оперная певица (сопрано), режиссёр, публицист и общественный деятель, народная артистка СССР.',
     biography: {
       dates: ['1902', '1920', '1924-1928', '1927', '1930-1933', '1933', '1941-1945', '1951-1960', '1980'],
@@ -40,12 +54,17 @@ export const directorsInfo = {
       '1956 — «Надежда Дурова» А.В.Богатырёва',
       '1957 — «Михась Подгорный» Е.К.Тикоцкого',
       '1958 — «Ясный рассвет» А.Е.Туренкова',
-      '1960 — «Пиковая дама» П. И. Чайковского.'],
+      '1960 — «Пиковая дама» П. И. Чайковского',
+    ],
     place: 'Минск',
+    coordinates: { lat: 53.9, lng: 27.56667 },
     video: 'https://www.youtube.com/watch?v=v3LC9JtorMM',
   },
 
-  'Буйницкий Игнат Терентьевич': {
+  {
+    gallery: Bujnicki,
+    name: 'Буйницкий Игнат Терентьевич',
+    img: directorTwo,
     info: 'Белорусский актёр, режиссёр, театральный деятель, основатель первого профессионального национального белорусского театра. Театр Буйницкого показывал спектакли в местечках и деревнях Белоруссии, гастролировал в Вильнюсе, Минске, Полоцке, Санкт-Петербурге, Варшаве и других городах. Его деятельность заложила основы белорусского профессионального театрального искусства. Большинство спектаклей Игнат Буйницкий ставил сам. В 1917 году был одним из инициаторов создания «Первого товарищества белорусской драмы и комедии» в Минске.',
     biography: {
       dates: ['1861', '1907', '1910', '1913', '1914—1916', '1917'],
@@ -63,12 +82,17 @@ export const directorsInfo = {
       '«Пошились в дурни» М.Крапивницкого',
       '«Хам» Э.Ожешко',
       '«В зимний вечер» Э.Ожешко',
-      '«Модный шляхтич» К.Каганца'],
+      '«Модный шляхтич» К.Каганца',
+    ],
     place: 'Полочаны',
+    coordinates: { lat: 54.2256, lng: 26.7044 },
     video: 'https://www.youtube.com/watch?v=FpHsAWuSoEI',
   },
 
-  'Дервоед Роман Алексеевич': {
+  {
+    gallery: Dervoed,
+    name: 'Дервоед Роман Алексеевич',
+    img: directorThree,
     info: 'Театральный режиссёр, белорусский актёр.',
     biography: {
       dates: ['1985', '2006', '2007', '2008', '2013'],
@@ -98,10 +122,14 @@ export const directorsInfo = {
       '2018 - «Бюджет» инсценировка по информационному материалу интернет-ресурсаTUT.BY',
     ],
     place: 'Орша',
+    coordinates: { lat: 54.5081, lng: 30.4172 },
     video: 'https://www.youtube.com/watch?v=gc9zCCB3KhM',
   },
 
-  'Лев Михайлович Эльстон': {
+  {
+    gallery: Elston,
+    name: 'Лев Михайлович Эльстон',
+    img: directorFour,
     info: 'Советский театральный режиссёр. Заслуженный деятель искусств Карельской АССР.',
     biography: {
       dates: ['1900', '2006', '2007', '2008', '2013'],
@@ -139,9 +167,13 @@ export const directorsInfo = {
       '1962 — «Именем Революции» М.Шатрова',
     ],
     place: 'Гомель',
+    coordinates: { lat: 52.4345, lng: 30.9754 },
   },
 
-  'Леон Гдальевич Рахленко': {
+  {
+    gallery: Rahlenko,
+    name: 'Леон Гдальевич Рахленко',
+    img: directorFive,
     info: 'Cоветский актёр, режиссёр, педагог. Народный артист СССР',
     biography: {
       dates: ['1907', '1907', '1910', '1913', '1914—1916', '1917'],
@@ -171,6 +203,7 @@ export const directorsInfo = {
       '1957 — «Грозовой год» А.Я.Каплера',
     ],
     place: 'Минск',
+    coordinates: { lat: 53.9, lng: 27.56667 },
     video: 'https://www.youtube.com/watch?v=kimvRGqEe-U',
   },
-};
+];

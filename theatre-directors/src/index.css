@@ -48,3 +48,8 @@ code {
 .developer-card a:hover{
   color: red;
 }
+
+#map {
+  width: 50vw;
+  height: 50vh;
+}
