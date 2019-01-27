@@ -12,7 +12,7 @@ function Developers() {
   function renderDevelopers() {
     const developerCards = [];
     for (let i = 0; i < developersArr.length; i++) {
-      developerCards.push(<DeveloperCard {...developersArr[i]} />);
+      developerCards.push(<DeveloperCard devInfo={developersArr[i]} />);
     }
     return developerCards;
   }

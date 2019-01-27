@@ -3,12 +3,14 @@ import FormattedMessage from 'react-intl';
 import DirectorCard from '../components/DirectorsList_Search/SearchResultCard';
 import { directorsInfo } from '../assets/textInfo/ru/directorsInfo';
 
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
 function getRndElement(arr) {
-  const i = getRndInteger(0, arr.length - 1);
-  return arr[i];
+  const dateObj = new Date();
+  const day = dateObj.getDate();
+  let i = day;
+  while (i > arr.length) {
+    i -= arr.length;
+  }
+  return arr[i - 1];
 }
 function Home() {
   return (
