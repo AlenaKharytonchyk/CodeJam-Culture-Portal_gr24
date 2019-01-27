@@ -6,8 +6,10 @@ import SearchResultCard from './SearchResultCard';
 const styles = {
   root: {
     display: 'flex',
-    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
     flexWrap: 'wrap',
+    justifyContent: 'space-around',
   },
 };
 
