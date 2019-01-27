@@ -9,7 +9,11 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+<<<<<<< HEAD
     "react-intl": "^2.8.0",
+=======
+    "react-image-gallery": "^0.8.12",
+>>>>>>> 40da70184e40050b5edc7940e188e230e6ea3053
     "react-scripts": "2.1.3"
   },
   "scripts": {
@@ -21,7 +25,14 @@
     "lint:write": "eslint . --fix"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "airbnb"
+    ],
+    "globals": {
+      "document": true,
+      "window": true
+    }
   },
   "browserslist": [
     ">0.2%",

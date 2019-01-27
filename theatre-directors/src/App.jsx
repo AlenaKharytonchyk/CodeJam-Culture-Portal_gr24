@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import Directors from './pages/Directors';
 import Developers from './pages/Developers';
 
-
 function App() {
   return (
     <IntlProvider>

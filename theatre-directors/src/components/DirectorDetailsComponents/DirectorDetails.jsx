@@ -9,12 +9,16 @@ import Youtube from './Youtube';
 
 export default function DirectorDetails(props) {
   const { result } = props;
+  if (result === null) {
+    return null;
+  }
+
   return (
     <section className="full-info">
       <GeneralInfo result={result} />
       <TimeLine />
       <Compositions result={result} />
-      <Gallery />
+      <Gallery result={result} />
       <Youtube />
       <Map coordinates={result.coordinates} />
     </section>
