@@ -3,6 +3,11 @@ import directorTwo from '../../images/directors/2Bujnicki.jpg';
 import directorThree from '../../images/directors/3Dervoed.jpg';
 import directorFour from '../../images/directors/4Elston.jpg';
 import directorFive from '../../images/directors/5Rahlenko.jpg';
+import Alexandrovskaya from '../../images/directors/1';
+import Bujnicki from '../../images/directors/2';
+import Dervoed from '../../images/directors/3';
+import Elston from '../../images/directors/4';
+import Rahlenko from '../../images/directors/5';
 
 export const directorsArr = ['Александровская Лариса Помпеевна', 'Буйницкий Игнат Терентьевич', 'Дервоед Роман Алексеевич', 'Лев Михайлович Эльстон', 'Леон Гдальевич Рахленко'];
 
@@ -17,6 +22,7 @@ export const dirrectorsCities = {
 
 export const directorsInfo = [
   {
+    gallery: Alexandrovskaya,
     name: 'Александровская Лариса Помпеевна',
     img: directorOne,
     info: 'Белорусская советская оперная певица (сопрано), режиссёр, публицист и общественный деятель, народная артистка СССР.',
@@ -55,6 +61,7 @@ export const directorsInfo = [
   },
 
   {
+    gallery: Bujnicki,
     name: 'Буйницкий Игнат Терентьевич',
     img: directorTwo,
     info: 'Белорусский актёр, режиссёр, театральный деятель, основатель первого профессионального национального белорусского театра. Театр Буйницкого показывал спектакли в местечках и деревнях Белоруссии, гастролировал в Вильнюсе, Минске, Полоцке, Санкт-Петербурге, Варшаве и других городах. Его деятельность заложила основы белорусского профессионального театрального искусства. Большинство спектаклей Игнат Буйницкий ставил сам. В 1917 году был одним из инициаторов создания «Первого товарищества белорусской драмы и комедии» в Минске.',
@@ -81,6 +88,7 @@ export const directorsInfo = [
   },
 
   {
+    gallery: Dervoed,
     name: 'Дервоед Роман Алексеевич',
     img: directorThree,
     info: 'Театральный режиссёр, белорусский актёр.',
@@ -117,6 +125,7 @@ export const directorsInfo = [
   },
 
   {
+    gallery: Elston,
     name: 'Лев Михайлович Эльстон',
     img: directorFour,
     info: 'Советский театральный режиссёр. Заслуженный деятель искусств Карельской АССР.',
@@ -160,6 +169,7 @@ export const directorsInfo = [
   },
 
   {
+    gallery: Rahlenko,
     name: 'Леон Гдальевич Рахленко',
     img: directorFive,
     info: 'Cоветский актёр, режиссёр, педагог. Народный артист СССР',

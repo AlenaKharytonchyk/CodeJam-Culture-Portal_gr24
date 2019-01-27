@@ -3,6 +3,7 @@ import Slide from '@material-ui/core/Slide';
 import { Button } from '@material-ui/core';
 import SearchResultList from '../components/DirectorsList_Search/SearchResultList';
 import { directorsInfo } from '../assets/textInfo/ru/directorsInfo';
+import Gallery from '../components/DirectorDetailsComponents/Gallery';
 
 class Directors extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Directors extends Component {
         <Slide in={isSelected} direction="left" mountOnEnter unmountOnExit>
           <div id="director-details">
             <Button onClick={() => this.handleResultSelect(null)}>Close</Button>
-        Тут будет интересная инфа
+            <Gallery result={selectedResult} />
           </div>
         </Slide>
       </div>
