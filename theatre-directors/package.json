@@ -9,11 +9,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-<<<<<<< HEAD
     "react-intl": "^2.8.0",
-=======
     "react-player": "^1.9.1",
->>>>>>> 821819d7158eca13a87f20f54c96235167fa7d13
     "react-image-gallery": "^0.8.12",
     "react-scripts": "2.1.3"
   },
