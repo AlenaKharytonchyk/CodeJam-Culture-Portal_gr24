@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import YouTubePlayer from 'react-player/lib/players/YouTube';
-import Button from '@material-ui/core/Button';
 
 function getModalStyle() {
   const top = 50;
@@ -23,6 +22,12 @@ const styles = theme => ({
     boxShadow: theme.shadows[5],
     outline: 'none',
   },
+  container: {
+    display: 'inline-block',
+    position: 'relative',
+    'text-align': 'center',
+    'text-justify': 'center',
+  },
 });
 
 class Youtube extends React.Component {
@@ -38,12 +43,36 @@ class Youtube extends React.Component {
     this.setState({ open: false });
   };
 
+  renderOverlay = () => {
+    const ovrlStyles = {
+      overlay: {
+        position: 'absolute',
+        alignItems: 'center',
+        justifyContent: 'center',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    };
+    return (
+      <div style={ovrlStyles.overlay} onClick={this.handleOpen} />
+    );
+  }
+
   render() {
     const { classes, videoUrl } = this.props;
 
     return (
       <div>
-        <Button onClick={this.handleOpen}>Просмотреть видео</Button>
+        <div className={classes.container}>
+          <YouTubePlayer
+            url={videoUrl}
+            playing={false}
+            onClick={this.handleOpen}
+          />
+          {this.renderOverlay()}
+        </div>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -53,8 +82,8 @@ class Youtube extends React.Component {
           <div style={getModalStyle()} className={classes.paper}>
             <YouTubePlayer
               url={videoUrl}
-              playing={true}
-              controls={true}
+              playing
+              controls
             />
           </div>
         </Modal>
