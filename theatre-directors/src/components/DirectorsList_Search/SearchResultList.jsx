@@ -14,7 +14,12 @@ const styles = {
 function SearchResultList(props) {
   const { results, selectResult, classes } = props;
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root} 
+      style={{
+        display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'space-around',
+      }} 
+    >
       {
        results.map(res => (
          <SearchResultCard
