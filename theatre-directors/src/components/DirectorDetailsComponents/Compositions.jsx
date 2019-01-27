@@ -1,4 +1,5 @@
 import React from 'react';
+import FormattedMessage from 'react-intl';
 import PropTypes from 'prop-types';
 
 export default function Compositions(props) {
@@ -6,7 +7,12 @@ export default function Compositions(props) {
   const listItems = result.compositions.map(item => <li key={item}>{item}</li>);
   return (
     <div className="compositions">
-      <h3>Произведения автора</h3>
+      <h3>
+        <FormattedMessage
+          id="DirectirDetails.Compositions"
+          defaultMessage="Произведения автора"
+        />
+      </h3>
       <ul>{ listItems }</ul>
     </div>
   );

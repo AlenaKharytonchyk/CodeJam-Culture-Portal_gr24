@@ -1,4 +1,5 @@
 import React from 'react';
+import FormattedMessage from 'react-intl';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -26,7 +27,10 @@ function NavBar(props) {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            Театральные режиссеры Беларуси
+            <FormattedMessage
+              id="NavBar.Title"
+              defaultMessage="Театральные режиссеры Беларуси"
+            />
           </Typography>
           <Button color="inherit">En</Button>
           <Button color="inherit">Ru</Button>
