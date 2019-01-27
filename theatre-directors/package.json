@@ -63,7 +63,8 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build:langs": "set NODE_ENV='production' babel-node scripts/mergeMessages.js",
+    "build": "npm run build:langs && node scripts/build.js",
     "test": "node scripts/test.js",
     "lint": "eslint .",
     "lint:write": "eslint . --fix"
@@ -78,6 +79,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
