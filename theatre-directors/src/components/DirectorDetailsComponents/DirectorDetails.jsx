@@ -18,7 +18,7 @@ export default function DirectorDetails(props) {
       <GeneralInfo result={result} />
       <TimeLine />
       <Compositions result={result} />
-      <Gallery />
+      <Gallery result={result} />
       <Youtube />
       <Map coordinates={result.coordinates} />
     </section>
