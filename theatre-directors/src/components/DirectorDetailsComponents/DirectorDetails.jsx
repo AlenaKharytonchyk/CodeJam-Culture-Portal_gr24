@@ -16,7 +16,7 @@ export default function DirectorDetails(props) {
   return (
     <section className="full-info">
       <GeneralInfo result={result} />
-      <TimeLine />
+      <TimeLine result={result} />
       <Compositions result={result} />
       <Gallery result={result} />
       <Youtube videoUrl={result.video} />
