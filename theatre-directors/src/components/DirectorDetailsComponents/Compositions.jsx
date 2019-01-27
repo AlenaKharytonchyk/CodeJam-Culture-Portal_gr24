@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function Compositions(props) {
   const { result } = props;
-  const listItems = result.compositions.map(item => <li>{item}</li>);
+  const listItems = result.compositions.map(item => <li key={item}>{item}</li>);
   return (
     <div className="compositions">
       <h3>Произведения автора</h3>

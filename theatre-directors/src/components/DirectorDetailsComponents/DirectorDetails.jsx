@@ -11,9 +11,9 @@ export default function DirectorDetails(props) {
   const { result } = props;
   return (
     <section className="full-info">
-      <GeneralInfo />
+      <GeneralInfo result={result} />
       <TimeLine />
-      <Compositions />
+      <Compositions result={result} />
       <Gallery />
       <Youtube />
       <Map coordinates={result.coordinates} />
