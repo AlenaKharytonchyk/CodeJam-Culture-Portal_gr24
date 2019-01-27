@@ -1,10 +1,17 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
+import PropTypes from 'prop-types';
 
-export default function Youtube() {
+export default function Youtube(props) {
+  const { videoUrl } = props;
   return (
-    <div className="youtube">
+    <div className="video">
       <h3>Видео</h3>
-      <div />
+      <ReactPlayer url={videoUrl} controls={true} playing={false} />
     </div>
   );
 }
+
+Youtube.propTypes = {
+  videoUrl: PropTypes.shape({}).isRequired,
+};
