@@ -1,5 +1,5 @@
 import React from 'react';
-import FormattedMessage from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import DirectorCard from '../components/DirectorsList_Search/SearchResultCard';
 import { directorsInfo } from '../assets/textInfo/ru/directorsInfo';
 
