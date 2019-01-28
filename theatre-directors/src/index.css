@@ -52,3 +52,17 @@ code {
 .developer-card a:hover{
   color: red;
 }
+
+@media screen and (max-width: 1199px) {
+  .youtube-video {
+    width: 80vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .youtube-video {
+    width: 50vw;
+    height: 30vw;
+  }
+}
