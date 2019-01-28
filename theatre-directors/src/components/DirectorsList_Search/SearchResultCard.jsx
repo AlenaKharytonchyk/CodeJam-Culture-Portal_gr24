@@ -16,6 +16,9 @@ const styles = {
   media: {
     objectFit: 'cover',
   },
+  directorName: {
+    height: '2.4em',
+  },
 };
 
 function DirectorCard(props) {
@@ -32,7 +35,7 @@ function DirectorCard(props) {
           title={result.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.directorName}>
             {result.name}
           </Typography>
           <Typography component="p" noWrap>

@@ -16,7 +16,7 @@ const developersArr = [
 
 function Developers(props) {
   const { t } = props;
-  const SIZE = 190;
+  const SIZE = 240;
   const developersList = developersArr.map((item) => {
     const devName = `developers.${item.github}`;
     const devHref = `https://github.com/${item.github}`;

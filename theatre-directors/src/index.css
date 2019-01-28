@@ -20,7 +20,7 @@ code {
 }
 
 .developer-card {
-  width: 250px;
+  width: 300px;
   height: 400px;
   box-sizing: border-box;
   margin: 30px;
@@ -53,7 +53,22 @@ code {
   color: red;
 }
 
-#map {
-  width: 50vw;
-  height: 50vh;
+@media screen and (max-width: 1199px) {
+  .youtube-video {
+    width: 80vw;
+    height: 50vw;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .youtube-video {
+    width: 50vw;
+    height: 30vw;
+  }
+
+#map {
+  width: 640px;
+  height: 480px;
+  max-width: 85vw;
+  max-height: 40vh;
+  }
