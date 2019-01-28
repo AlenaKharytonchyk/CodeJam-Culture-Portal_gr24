@@ -77,6 +77,9 @@ class Youtube extends React.Component {
             url={videoUrl}
             playing={false}
             onClick={this.handleOpen}
+            width
+            height
+            className="youtube-video"
           />
           {this.renderOverlay()}
         </div>
@@ -91,6 +94,9 @@ class Youtube extends React.Component {
               url={videoUrl}
               playing
               controls
+              width
+              height
+              className="youtube-video"
             />
           </div>
         </Modal>
