@@ -1,4 +1,5 @@
 import React from 'react';
+import { translate, Trans } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -20,17 +21,17 @@ const styles = {
 };
 
 function NavBar(props) {
-  const { classes } = props;
+  const { classes, i18n } = props;
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            Театральные режиссеры Беларуси
+            <Trans i18nKey="main.title" />
           </Typography>
-          <Button color="inherit">En</Button>
-          <Button color="inherit">Ru</Button>
-          <Button color="inherit">By</Button>
+          <Button color="inherit" onClick={() => i18n.changeLanguage('en')}>En</Button>
+          <Button color="inherit" onClick={() => i18n.changeLanguage('ru')}>Ru</Button>
+          <Button color="inherit" onClick={() => i18n.changeLanguage('by')}>By</Button>
         </Toolbar>
       </AppBar>
     </div>
@@ -39,6 +40,7 @@ function NavBar(props) {
 
 NavBar.propTypes = {
   classes: PropTypes.shape({}).isRequired,
+  i18n: PropTypes.shape({}).isRequired,
 };
 
-export default withStyles(styles)(NavBar);
+export default translate('common')(withStyles(styles)(NavBar));
