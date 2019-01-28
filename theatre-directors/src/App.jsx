@@ -1,6 +1,6 @@
 import React from 'react';
 import CssBaseLine from '@material-ui/core/CssBaseline';
-import IntlProvider from 'react-intl';
+import { IntlProvider } from 'react-intl';
 import './App.css';
 import NavBar from './components/NavBar';
 import PageContainer from './components/PageContainer';

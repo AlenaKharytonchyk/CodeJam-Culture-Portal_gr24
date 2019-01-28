@@ -1,5 +1,5 @@
 import React from 'react';
-import FormattedMessage from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 
 export default function Compositions(props) {

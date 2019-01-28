@@ -4,6 +4,7 @@ import GitHub from './GithubIcon';
 const fotos = require.context('../assets/images/developers', false, /\.jpg$/);
 const fotosObj = fotos.keys()
   .reduce((imgs, key) => {
+    // eslint-disable-next-line no-param-reassign
     imgs[key] = fotos(key);
     return imgs;
   }, {});

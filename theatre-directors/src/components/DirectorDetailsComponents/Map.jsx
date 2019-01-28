@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* global google */
 import React, { Component } from 'react';
-import FormattedMessage from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 
 function initMap(coordinates) {
@@ -22,7 +22,7 @@ export default class Map extends Component {
       <div className="map">
         <h3>
           <FormattedMessage
-            id="DirectorDetails.Place.Title"
+            id="DirectirDetails.Map"
             defaultMessage="Место основной деятельности"
           />
         </h3>

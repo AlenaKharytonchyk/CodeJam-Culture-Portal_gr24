@@ -11,7 +11,7 @@ const developersArr = [
 function Developers() {
   function renderDevelopers() {
     const developerCards = [];
-    for (let i = 0; i < developersArr.length; i++) {
+    for (let i = 0; i < developersArr.length; i += 1) {
       developerCards.push(<DeveloperCard {...developersArr[i]} />);
     }
     return developerCards;

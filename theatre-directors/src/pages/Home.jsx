@@ -1,14 +1,16 @@
 import React from 'react';
-import FormattedMessage from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import DirectorCard from '../components/DirectorsList_Search/SearchResultCard';
 import { directorsInfo } from '../assets/textInfo/ru/directorsInfo';
 
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
 function getRndElement(arr) {
-  const i = getRndInteger(0, arr.length - 1);
-  return arr[i];
+  const dateObj = new Date();
+  const day = dateObj.getDate();
+  let i = day;
+  while (i > arr.length) {
+    i -= arr.length;
+  }
+  return arr[i - 1];
 }
 function Home() {
   return (
@@ -22,7 +24,7 @@ function Home() {
       <article>
         <p>
           <FormattedMessage
-            id="Home.article.p1"
+            id="Home.Article.p1"
             defaultMessage="Белорусская театральная история насчитывает не одно столетие.
             Белорусский профессиональный театр развился из древних народных обрядов,
             творчества бродячих музыкантов, придворных трупп белорусских магнатов,
@@ -31,7 +33,7 @@ function Home() {
         </p>
         <p>
           <FormattedMessage
-            id="Home.article.p2"
+            id="Home.Article.p2"
             defaultMessage="Но на белорусской земле бродячие артисты не просто выступали, а постигали
             азы своего профессионального мастерства. Известно, что в Сморгони до середины
             XIX века существовала единственная в Европе медвежья академия. Отловленных
@@ -41,7 +43,7 @@ function Home() {
         </p>
         <p>
           <FormattedMessage
-            id="Home.article.p3"
+            id="Home.Article.p3"
             defaultMessage="Ярчайшая страница в истории народного театрального искусства – белорусская батлейка.
             Традицию устанавливать рождественские батлейки заложил святой Франциск Ассизский в XIII
             веке в Италии. Но в Беларуси, где кроме канонических сюжетов бродячие артисты в
@@ -53,7 +55,7 @@ function Home() {
         </p>
         <p>
           <FormattedMessage
-            id="Home.article.p4"
+            id="Home.Article.p4"
             defaultMessage="Сейчас Беларусь — страна с давней и хорошо развитой театральной культурой. Свой театр
             есть в каждом областном центре. А наш сайт призван познакомить Вас с наиболее известными
             теаральными режиссерами нашей страны. Вот один из них:"
