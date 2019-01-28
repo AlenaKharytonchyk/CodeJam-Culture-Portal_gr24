@@ -56,13 +56,20 @@ class Youtube extends React.Component {
       },
     };
     return (
-      <div style={ovrlStyles.overlay} onClick={this.handleOpen} />
+      <div 
+        style={ovrlStyles.overlay} 
+        onClick={this.handleOpen}
+        onKeyPress={this.handleOpen}
+        role="button"
+        tabIndex="0"
+      />
     );
   }
 
   render() {
     const { classes, videoUrl } = this.props;
-
+    const { open } = this.state;
+    
     return (
       <div>
         <div className={classes.container}>
@@ -76,7 +83,7 @@ class Youtube extends React.Component {
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
-          open={this.state.open}
+          open={ open }
           onClose={this.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>

@@ -3,23 +3,19 @@ import DeveloperCard from '../components/DevelopersCard';
 
 const developersArr = [
   { name: 'Гущо Анастасия', github: '375291601334', img: 'AnastasiyaHushcha.jpg' },
-  { name: 'Юлиан', github: 'juliankov', img: 'JulianKov.jpg' },
-  { name: 'Харитончук Алена', github: 'alenakharytonchyk', img: 'AlenaKharytonchyk.jpg' },
-  { name: 'Виктория', github: 'victoriathebrave', img: 'VictoriaTheBrave.jpg' },
+  { name: 'Ковалев Юлиан', github: 'juliankov', img: 'JulianKov.jpg' },
+  { name: 'Харитончик Алена', github: 'alenakharytonchyk', img: 'AlenaKharytonchyk.jpg' },
+  { name: 'Лихута Виктория', github: 'victoriathebrave', img: 'VictoriaTheBrave.jpg' },
 ];
 
 function Developers() {
-  function renderDevelopers() {
-    const developerCards = [];
-    for (let i = 0; i < developersArr.length; i++) {
-      developerCards.push(<DeveloperCard {...developersArr[i]} />);
-    }
-    return developerCards;
-  }
-
   return (
     <div className="App developers-container">
-      {renderDevelopers() }
+      {
+        developersArr.map(item => (
+          <DeveloperCard key={item.name} devInfo={item} />
+        ))
+      }
     </div>
   );
 }

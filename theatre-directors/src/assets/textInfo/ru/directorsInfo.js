@@ -169,6 +169,7 @@ export const directorsInfo = [
     ],
     place: 'Гомель',
     coordinates: { lat: 52.4345, lng: 30.9754 },
+    video: 'https://www.youtube.com/watch?v=sdozKdB1qpk',
   },
 
   {
