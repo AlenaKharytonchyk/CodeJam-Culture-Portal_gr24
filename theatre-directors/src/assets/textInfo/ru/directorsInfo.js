@@ -21,7 +21,7 @@ export const dirrectorsCities = {
   Гомель: ['Лев Михайлович Эльстон'],
 };
 
-export const directorsInfo = [
+export const c = [
   {
     gallery: Alexandrovskaya,
     name: 'Александровская Лариса Помпеевна',
@@ -169,6 +169,7 @@ export const directorsInfo = [
     ],
     place: 'Гомель',
     coordinates: { lat: 52.4345, lng: 30.9754 },
+    video: 'https://www.youtube.com/watch?v=sdozKdB1qpk',
   },
 
   {
