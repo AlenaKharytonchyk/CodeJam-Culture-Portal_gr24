@@ -15,7 +15,7 @@ class AutocompleteInput extends Component {
     inputVal: '',
     inputState: 10,
     searchProp: 'Search by Director',
-    locations: citiesArr.map(loc => <MenuItem onClick={() => { this.setState({ inputVal: loc, displayLoc: 'none' }); this.props.updatedata(dirrectorsCities[loc]); }}>{loc}</MenuItem>),
+    locations: citiesArr.map(loc => <MenuItem key={loc} onClick={() => { this.setState({ inputVal: loc, displayLoc: 'none' }); this.props.updatedata(dirrectorsCities[loc]); }}>{loc}</MenuItem>),
     displayLoc: 'none',
   }
 
