@@ -1,0 +1,24 @@
+{
+  "tabs": {
+    "home": "HOME",
+    "directors": "DIRECTORS",
+    "developers": "DEVELOPERS"
+  },
+  "main": {
+    "title": "Theater directors of Belarus",
+    "p1": "Belarusian theater history has more than one century. Belarusian professional theater developed from ancient folk rites, the creativity of wandering musicians, the court troupe of the Belarusian magnates, activity amateur groups the XIX-XX centuries.",
+    "p2": "But on the Belarusian land, roving artists not only performed, but grasped the basics of their professional skills. It is known that the only bear academy in Europe existed in Smorgon until the mid-19th century. Bear cubs caught in the forests were taught to dance, and then the buffoons went with them to fairs in Russia, Poland, Hungary, and Germany.",
+    "p3": "The brightest page in the history of folk theatrical art is the Belarusian batley. The tradition to set Christmas batleys was laid by St.Francis of Assisi in the 13th century in Italy. But in Belarus, where, apart from canonical plots, roving actors at the beginning of the 16th century also presented scenes from the life, this art received popular recognition and has survived to the present day. Tradition in our time is supported by many puppet theaters of the republic, in almost all the churches at Christmas you can also see the performance in the genre of batley.",
+    "p4": "Now Belarus is a country with a long and well-developed theater culture. Every regional center has its own theater. And our site is designed to acquaint you with the most famous theater directors of our country. Here is one of them:"
+  },
+  "search": {
+    "name": "Name",
+    "place": "Birth location"
+  },
+  "developers": {
+    "375291601334": "Anastasiya Hushcha",
+    "juliankov": "Yulian Kavaliou",
+    "alenakharytonchyk": "Alena Kharytonchyk",
+    "victoriathebrave": "Victoria Likhuta"
+  }
+}

@@ -1,5 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
+import { translate, Trans } from 'react-i18next';
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
 import PropTypes from 'prop-types';
@@ -85,8 +86,12 @@ class AutocompleteInput extends Component {
                     displayEmpty
                     name="Search"
                   >
-                    <MenuItem value={10}>Director</MenuItem>
-                    <MenuItem value={20}>Location</MenuItem>
+                    <MenuItem value={10}>
+                      <Trans i18nKey="search.name" />
+                    </MenuItem>
+                    <MenuItem value={20}>
+                      <Trans i18nKey="search.place" />
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </InputAdornment>
@@ -116,4 +121,4 @@ AutocompleteInput.propTypes = {
   updatedata: PropTypes.func.isRequired,
 };
 
-export default AutocompleteInput;
+export default translate('common')(AutocompleteInput);
