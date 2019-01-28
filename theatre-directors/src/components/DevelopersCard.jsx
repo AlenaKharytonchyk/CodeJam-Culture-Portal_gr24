@@ -6,7 +6,7 @@ function DeveloperCard(props) {
   const { devInfo } = props;
   
   const devHref = `https://github.com/${devInfo.github}`;
-  const url = require(`../assets/images/developers./${devInfo.img}`);
+  const url = require(`../assets/images/developers/${devInfo.img}`);
   const SIZE = 190;
   return (
     <div className="developer-card">
