@@ -21,7 +21,7 @@ export const dirrectorsCities = {
   Гомель: ['Лев Михайлович Эльстон'],
 };
 
-export const c = [
+export const directorsInfo = [
   {
     gallery: Alexandrovskaya,
     name: 'Александровская Лариса Помпеевна',
