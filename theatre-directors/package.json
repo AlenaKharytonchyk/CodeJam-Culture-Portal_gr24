@@ -1,5 +1,6 @@
 {
   "name": "theatre-directors",
+  "homepage": "https://alenakharytonchyk.github.io/CodeJam-Culture-Portal_gr24",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
     "vertical-timeline-component-for-react": "^1.0.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
