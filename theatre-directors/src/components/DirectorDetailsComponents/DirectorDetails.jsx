@@ -20,12 +20,14 @@ export default function DirectorDetails(props) {
       <Compositions result={result} />
       <Gallery result={result} />
       <Youtube videoUrl={result.video} />
-      <Youtube />
       <Map coordinates={result.coordinates} />
     </section>
   );
 }
 
 DirectorDetails.propTypes = {
-  result: PropTypes.shape({}).isRequired,
+  result: PropTypes.shape({}),
+};
+DirectorDetails.defaultProps = {
+  result: null,
 };

@@ -19,6 +19,6 @@ Gallery.propTypes = {
   result: PropTypes.shape({
     gallery: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   }).isRequired,
-  classes: PropTypes.shape({}).isRequired,
+  // classes: PropTypes.shape({}).isRequired,
 };
 export default Gallery;
