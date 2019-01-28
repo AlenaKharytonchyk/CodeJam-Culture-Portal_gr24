@@ -56,7 +56,7 @@ class Youtube extends React.Component {
       },
     };
     return (
-      <div style={ovrlStyles.overlay} onClick={this.handleOpen} />
+      <div style={ovrlStyles.overlay} onClick={this.handleOpen}/>
     );
   }
 

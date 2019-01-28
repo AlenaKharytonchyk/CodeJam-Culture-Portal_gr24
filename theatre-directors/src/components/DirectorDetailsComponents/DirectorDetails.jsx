@@ -5,7 +5,7 @@ import TimeLine from './TimeLine';
 import Map from './Map';
 import Compositions from './Compositions';
 import Gallery from './Gallery';
-// import Youtube from './Youtube';
+import Youtube from './Youtube';
 
 export default function DirectorDetails(props) {
   const { result } = props;
@@ -19,8 +19,8 @@ export default function DirectorDetails(props) {
       <TimeLine result={result} />
       <Compositions result={result} />
       <Gallery result={result} />
-      {/* <Youtube videoUrl={result.video} /> */}
-      {/* <Youtube /> */}
+      <Youtube videoUrl={result.video} />
+      <Youtube />
       <Map coordinates={result.coordinates} />
     </section>
   );
